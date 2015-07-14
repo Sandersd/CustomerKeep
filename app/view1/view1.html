@@ -1,0 +1,29 @@
+<div id="login" class="row">
+  
+  <div class="large-6 large-offset-3">
+    <h1 class="text-center">CustomerKeep</h1>
+    <form ng-submit="login()">
+      <fieldset class="radius">
+        <div data-alert class="alert-box">
+          Login invalid
+          <a href="/app/#/" class="close">&times;</a>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <input type="text" name="username" placeholder="Enter Username" ng-model = "creds.username" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <input type="password" name="password" placeholder="Enter Password" ng-model = "creds.password" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <button class="button large expand radius " type="submit">Login</button>
+         </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

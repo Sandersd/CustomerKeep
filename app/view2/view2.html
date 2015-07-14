@@ -1,0 +1,51 @@
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/app/#/">CustomerKeep</a></h1>
+      </li>
+       
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class=""><a href="/app/#/">Logout</a></li>
+        
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+        
+      </ul>
+    </section>
+  </nav>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h1>{{title}}</h1>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <table ng-controller="CustomerCtrl" class="twelve" width="100%">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="customer in customers">
+        <tr>
+          <td>{{customer.name}}</td>
+          <td>{{customer.address}}</td>
+          <td>{{customer.city}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

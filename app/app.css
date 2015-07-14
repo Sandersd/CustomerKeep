@@ -1,0 +1,5 @@
+.alert-box {
+  display: none;
+  background-color: red;
+  border: #eee 1px solid;
+}
